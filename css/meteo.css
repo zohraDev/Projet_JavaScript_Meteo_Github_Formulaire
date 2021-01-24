@@ -1,0 +1,50 @@
+.containerMeteo {
+    width: 300px;
+    display: grid;
+    place-content: center;
+    background-color: rgba(255, 248, 220, 0.514); 
+  }
+  
+  .header {
+    width: 300px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+  }
+  
+  
+  .city {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  
+  #desc {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .search {
+    text-align: center;
+    place-content: center;
+    padding: 20px;
+  }
+  
+  input.location {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid black;
+    background: transparent;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .location:focus {
+    outline: none;
+  }
+  

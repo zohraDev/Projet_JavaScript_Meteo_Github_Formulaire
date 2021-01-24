@@ -1,0 +1,46 @@
+/* Start music animation */
+
+.mp3_player_off{
+	width:500px; height:60px; color: white;
+	z-index: 10; padding:5px; margin:50px auto; 
+	
+}
+
+.mp3_player_off > div > .audio_box{ 
+   	transition: none;  width:900px; background:white;; float:left;
+  	box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de,
+    0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de,
+    inset 0 0 5px #fff, inset 0 0 10px #fff, inset 0 0 15px #fff,
+    inset 0 0 20px #ff00de, inset 0 0 35px #ff00de, inset 0 0 40px #ff00de,
+    inset 0 0 50px #ff00de, inset 0 0 75px #ff00de;
+  	border: 1px solid #ff00de;  }
+
+
+
+.mp3_player_on{ 
+	width:500px; height:60px; color: white;
+  	box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+    0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+	z-index: 10; padding:5px; margin:50px auto; 
+} 
+		
+.mp3_player_on > div > audio{ 
+	animation-duration: .9s;
+   	animation-name: clignoter; animation-iteration-count: infinite;
+   	transition: none;  width:500px; background:#000;; float:left;
+  	box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de,
+    0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de,
+    inset 0 0 5px #fff, inset 0 0 10px #fff, inset 0 0 15px #fff,
+    inset 0 0 20px #ff00de, inset 0 0 35px #ff00de, inset 0 0 40px #ff00de,
+    inset 0 0 50px #ff00de, inset 0 0 75px #ff00de;
+  	border: 1px solid #ff00de;  }
+  
+#analyser_render{  width:500px; height:30px; float:left}
+
+@keyframes clignoter {
+  	0%   { opacity:1; }
+  	40%   {opacity:0; }
+  	100% { opacity:1; }
+}
+
+/* End music animation */

@@ -1,0 +1,297 @@
+.rose_allume {
+	height: 300px;
+	width: 250px;
+	z-index: 100;
+	transition: 0.3s;
+	box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de,
+	  0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de,
+	  inset 0 0 5px #fff, inset 0 0 10px #fff, inset 0 0 15px #fff,
+	  inset 0 0 20px #ff00de, inset 0 0 35px #ff00de, inset 0 0 40px #ff00de,
+	  inset 0 0 50px #ff00de, inset 0 0 75px #ff00de;
+	border: 1px solid #ff00de;
+	
+  
+	display:flex;
+	justify-content:center;
+	align-items:center;
+  }
+  .rose_eteint{
+	height: 300px;
+	width: 250px;
+	z-index: 100;
+	border:1px solid lightgrey;
+  }
+  /*------ fin rose -----*/
+  
+  /*----- debut texte general -----*/
+  .text_allume{
+	font-size:22px;
+	color: white;
+	font-family: roboto;
+	border:none;
+	transition: 0.1s;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+	  0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+	z-index: 10;
+  }
+  .text_eteint{
+	font-size:22px;
+	font-family: roboto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+  }
+  /*----- fin texte general -----*/
+  
+  /*----- debut neon bleu -----*/
+  
+  .bleu_allume {
+	height: 20px;
+	width: 450px;
+	z-index: 1;
+	border:1px solid #228dff;
+	transition: 4s;
+	background: white;
+	box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+	  0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+	  
+  }
+  .bleu_eteint{
+	height: 20px;
+	width: 450px;
+	z-index: 1;
+	border:1px solid lightgrey;
+  }
+  /*----- fin neon bleu -----*/
+  
+  
+  /*----- debut orange -----*/
+  .orange_allume {
+	height: 200px;
+	width: 50px;
+	z-index: 1;
+	border:none;
+	transition: 0.4s;
+	box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fc4a48,
+	  0 0 35px #fc4a48, 0 0 40px #fc4a48, 0 0 50px #fc4a48, inset 0 0 5px #fff,
+	  inset 0 0 10px #fff, inset 0 0 15px #fff, inset 0 0 20px #fc4a48,
+	  inset 0 0 35px #fc4a48, inset 0 0 40px #fc4a48, inset 0 0 50px #fc4a48;
+	  animation: blink 12s infinite;
+	  -webkit-animation: blink 12s infinite;
+	  
+  }
+  .orange_eteint{
+	height: 200px;
+	width: 50px;
+	z-index: 1;
+	border:1px solid lightgrey;
+  }
+  /*----- fin orange -----*/
+  
+  
+  
+  /*----- debut image -----*/
+  .img_eteint{
+	display:flex;
+	justify-content:end;
+	height: 100px;
+	width: 100px;
+	z-index: 1;
+  }
+  .img_allume{
+	display:flex;
+	justify-content:end;
+	height: 100px;
+	width: 100px;
+	z-index: 1;
+	box-shadow: 0 0 5px #B6FF00, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 
+	0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
+  }
+  img{
+	z-index:0;
+  }
+  .image_allume{
+	filter:brightness(1.6);
+  }
+  /*----- fin image -----*/
+  
+  
+  /*----- animation clignotement numero 1-----*/
+  @keyframes blink {
+	20%,
+	24%,
+	55% {
+	  color: #111;
+	  box-shadow: none;
+	}
+  
+	0%,
+	19%,
+	21%,
+	23%,
+	25%,
+	54%,
+	56%,
+	100% {
+		box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fc4a48,
+		0 0 35px #fc4a48, 0 0 40px #fc4a48, 0 0 50px #fc4a48, inset 0 0 5px #fff,
+		inset 0 0 10px #fff, inset 0 0 15px #fff, inset 0 0 20px #fc4a48,
+		inset 0 0 35px #fc4a48, inset 0 0 40px #fc4a48, inset 0 0 50px #fc4a48;
+		
+	}
+  }
+  /*----- fin animation clignotement numero 1-----*/
+  
+  /*----- animation clignotement numero  2 -----*/
+  @keyframes blink2 {
+	20%{
+	  color: black;
+	  box-shadow: none;
+	  background-color:black;
+	}
+	25%{
+	  color: black;
+	  box-shadow: none;
+	  background-color:black;
+	}
+	28% {
+	  color: #111;
+	  box-shadow: none;
+	  background-color:black;
+	  
+	}
+  
+	0%,
+	19%,
+	22%,
+	23%,
+	25%,
+	54%,
+	56%,
+	100% {
+	  background-color:yellow;
+	  box-shadow: 0 0 40px #fff30f,
+	  0 0 50px #fff30f, 0 0 60px #fff30f, 0 0 70px #fff30f, 0 0 80px #fff30f;
+	}
+  }
+
+  .dark {
+	background-color: #000000;
+  }
+
+  .main-img-on{
+	filter:brightness(1.5);
+	box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+	  0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+}
+.projet-img-on{
+	filter:brightness(2);
+}
+.main-header-on{
+	background-color:black;
+	box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de,
+	  0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de,
+	  inset 0 0 5px #fff, inset 0 0 10px #fff, inset 0 0 15px #fff,
+	  inset 0 0 20px #ff00de, inset 0 0 35px #ff00de, inset 0 0 40px #ff00de,
+	  inset 0 0 50px #ff00de, inset 0 0 75px #ff00de;
+	border: 1px solid #ff00de;
+}
+
+  .btn_on{
+	outline:none;
+	border:1px solid lightblue;
+	background: white;
+	box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+	  0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+  }
+
+  .article-on{
+	background-color:black;
+	box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fc4a48,
+	0 0 35px #fc4a48, 0 0 40px #fc4a48, 0 0 50px #fc4a48, inset 0 0 5px #fff,
+	inset 0 0 10px #fff, inset 0 0 15px #fff, inset 0 0 20px #fc4a48,
+	inset 0 0 35px #fc4a48, inset 0 0 40px #fc4a48, inset 0 0 50px #fc4a48;
+  }
+  .articleL-on{
+	background-color:black;
+	box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de,
+	0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de,
+	inset 0 0 5px #fff, inset 0 0 10px #fff, inset 0 0 15px #fff,
+	inset 0 0 20px #ff00de, inset 0 0 35px #ff00de, inset 0 0 40px #ff00de,
+	inset 0 0 50px #ff00de, inset 0 0 75px #ff00de;
+  border: 1px solid #ff00de;
+  }
+
+  .article-on p, .article-on span, .articleL-on p, .articleL-on span{
+	color: white;
+	font-family: roboto;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+	  0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+	z-index: 10;
+  }
+  .article-on h2, .articleL-on h2, .articleL-on h1, .articleL-on time{
+	color: white;
+	font-family: roboto;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #2cb33e,
+	  0 0 35px #2cb33e, 0 0 40px #2cb33e, 0 0 50px #2cb33e, 0 0 75px #2cb33e;
+	z-index: 10;
+  }
+
+  .section-on{
+	  background-color:black;
+  }
+
+  /*----- debut jaune -----*/
+  .jaune_allume{
+	display:flex;
+	justify-content:end;
+	height: 100px;
+	width: 100px;
+	z-index: 1;
+	transition: .1s;
+	box-shadow: 0 0 40px #fff30f,
+		0 0 50px #fff30f, 0 0 60px #fff30f, 0 0 70px #fff30f, 0 0 80px #fff30f;
+		/*animation: blink2 60s infinite;
+		-webkit-animation: blink2 60s infinite; */
+		
+  }
+  .jaune_eteint{
+	display:flex;
+	justify-content:end;
+	height: 100px;
+	width: 100px;
+	background-color:#fff30f;
+	z-index: 1;
+  }
+  #divJaune{
+  	margin-bottom:30px ;
+  }
+ .date{
+  	margin-top:15px ;
+  }
+  	
+
+  .textJS_allume {
+	margin-left:20px;
+	margin-top:48px;
+	font-size:48px;
+	text-align:right;
+	font-family: roboto;
+	z-index: 10;
+	color: white;
+	font-family: roboto;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+	  0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+	z-index: 10;
+  }
+  .textJS_eteint{
+	margin-left:20px;
+	margin-top:48px;
+	font-size:48px;
+	text-align:right;
+	font-family: roboto;
+	z-index: 10;
+  }
+  /*----- fin jaune -----*/
+
+  

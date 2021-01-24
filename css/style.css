@@ -1,0 +1,268 @@
+/* Main stylesheet */
+        /* global */
+              /* import font */
+@font-face{
+	font-family: "Thasadith";
+	src:url("../font/Thasadith/Thasadith-Regular.ttf") format("truetype");
+	font-style:normal;
+	font-weight:normal;
+}
+@font-face{
+	font-family: "Thasadith";
+	src:url("../font/Thasadith/Thasadith-Italic.ttf") format("truetype");
+	font-style:italic;
+	font-weight:normal;
+}
+@font-face{
+	font-family: "Thasadith";
+	src:url("../font/Thasadith/Thasadith-Bold.ttf") format("truetype");
+	font-style:normal;
+	font-weight:bold;
+}
+body{
+    font-size:1.1em;;
+    background-color:lightgrey;
+    font-family: "Thasadith", sans-serif;
+}
+img{
+	max-width:100%;
+}
+
+.wrapper{
+	max-width: 90%;
+    margin: 0 auto;
+    background-color:#f7fffc;
+}
+
+/* end global */
+
+/* articles */
+.grid-item {
+    text-align: center; 
+    padding:0; 
+}
+/* end articles */
+
+/* start presentation */
+.presentation p {
+    color:grey;
+    letter-spacing:1px;
+}
+/* end presentation*/
+
+/* start header  */
+.main-header{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding: 7px 0;
+    width:100%; 
+    background-color:#088a5e;
+    border-bottom: 10px solid #A99265; 
+    position: relative;
+    cursor: help; 
+}
+
+.main-header h1{
+    font-size:1.5em;
+    color:white;
+    padding-bottom:10px; 
+}
+.img-container{
+    width:70%;
+}
+
+/* start funny useless tooltip */
+.img-container:hover:after,
+.img-container:focus:after {
+  content: attr(aria-label);
+  position: absolute;
+  top: 1.5em;
+  left: 76%;
+  /* on centre horizontalement  */
+	transform: translateX(-50%); 
+  z-index: 1; 
+  /* on interdit le retour à la ligne*/
+  white-space: nowrap;  
+  padding: 5px 18px;
+  background: #978052;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 1.2rem;
+}
+[aria-label]:hover:before,
+[aria-label]:focus:before {
+  content: "▼";
+  position: absolute;
+  top: 2.4em;
+	left: 71%;
+	transform: translateX(-50%); /* on centre horizontalement  */
+  font-size: 20px;
+  color: #978052;
+}
+[aria-label]:focus {
+    outline: none;
+  }
+  /* end funny useless tooltip  */
+/*   end header */
+
+/* start skills */
+.contact, .skills{
+    background-color:#146647;
+    border-bottom: 10px solid #A99265;
+}
+.skills{
+    padding-top:20px;
+}
+.skills p{
+    color:#293629;
+}
+
+.fa-hamburger, .fa-html5, .fa-php, .fa-pizza-slice, .fa-java, .fa-fish{
+    color:#293629;
+}
+
+
+/* hide skill animation in mobile version */
+.flex-cont{
+    display:none;
+}
+/* end skills */
+
+/* start contact */
+.contact h2, .skills h2, .logo h2, time{
+    color:white;
+    font-size: 1.5em;
+}
+ .logo p{
+    color:#364236;
+}
+.contact{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+.contact h2, .contact address{
+    padding-bottom:20px;
+}
+.contact a{
+    color:#A99265;
+    text-decoration:none;
+    display:block;
+    font-size: 1.2em;
+    font-weight : bold;
+}
+.social-networks{
+    padding-top:20px;
+}
+/* end contact */
+
+/* start sub-articles */
+.sub-article{
+    padding:35px;
+    border-bottom: 5px solid #A99265;
+}
+.sub-article h2{
+    font-size:1.8em;
+    color:#146647;
+    padding-bottom:40px;
+}
+.school, .restaurant{
+   display:flex;
+   flex-flow:row wrap;
+   justify-content:space-between;
+   color:#146647;
+   font-weight:bold;
+}
+.school, .restaurant{
+    margin: 15px 0px;
+}
+/* end sub articles*/
+
+/* start hobbies*/
+.hobbies{
+    color:grey;
+}
+/* end hobbies*/
+
+/* start projets */
+.projets{
+    border-bottom:none;
+}
+.projets img{
+    transition: .3s ease-in-out;
+}
+.projets img:hover{
+    transform:scale(6);
+}
+.projets p{
+    color:grey;
+}
+.img-project figcaption{
+    color:#146647;
+}
+/*  end projets */
+
+/*********************  media queries ***************************/
+	 @media screen and (min-width: 800px) {
+	
+.wrapper{
+		max-width:1100px;
+        margin: 20px auto;
+      
+}	
+body{
+    font-size:1.2em;
+}
+/*  grid  */
+.grid-container { 
+		display: grid;
+		grid-template-columns: repeat(8, 1fr);
+		grid-template-rows: repeat(8, 1fr);
+	}				
+.l-col-3{
+	grid-column:span 3;
+}
+.l-col-5{
+	grid-column:span 5;
+}	
+
+.l-row-1{
+	grid-row:span 1;
+}
+.l-row-2{
+	grid-row:span 2;
+}
+.l-row-3{
+	grid-row:span 3;
+}
+.l-row-4{
+	grid-row:span 4;
+}
+.l-row-8{
+	grid-row:span 8;
+}
+/* end grid */
+
+/* start skills */
+.skills ul{
+    display:none;
+}
+.skills h2{
+    padding-bottom:30px;
+}
+    /* display skills animation in desk/tab version */
+.flex-cont{
+    display:flex;
+}
+/* end skills */
+ }
+ aside h2{
+    padding-top:25px ;
+ }
+ .containerMeteo{
+    margin:20px  0;
+ }

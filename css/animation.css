@@ -1,0 +1,129 @@
+/* start animation skills */
+.flex-cont {
+	flex-direction:column;
+	align-items:center;
+	padding: 0 10px;
+}
+.bar{
+	height: 20px;
+	width: 280px;
+	border-radius: 4px;
+	background-color:lightgrey;
+	border-radius: 6px;
+	margin-top: 15px;
+}
+.fill {
+	height: 20px;
+	border-radius: 6px;
+	background-color:#A99265;
+}
+.fill-html {
+	width:50% ;
+	animation-name: filling-html;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: initial;
+}
+@keyframes filling-html {
+	0% {
+		width: 0px;
+	}
+	100%{
+		width:50% ;
+	}
+}
+
+.fill-food{
+	width:83%;
+	animation-name: filling-food ;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: initial;
+}
+@keyframes filling-food {
+	0% {
+		width: 0px;
+	}
+	100% {
+		width: 83%;
+	}
+}
+	
+.fill-php {
+	width: 40%;
+	animation-name: filling-php;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: initial;
+}
+@keyframes filling-php {
+	0% {
+		width: 0px;
+	}
+	100% {
+		width: 40%;
+	}
+}
+
+.fill-pastry {
+	width:82%;
+	animation-name: filling-pastry;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: initial;
+}
+@keyframes filling-pastry{
+	0% {
+		width: 0px;
+	}
+	100% {
+		width: 82%;
+	}
+}
+.fill-java{
+	width: 35%;
+	animation-name: filling-java;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: initial;
+}
+@keyframes filling-java {
+	0% {
+		width: 0px;
+	}
+	100% {
+		width:35%;
+	}
+}
+
+.fill-fish{
+	width: 88%;
+	animation-name: filling-fish;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: initial;
+}
+
+@keyframes filling-fish {
+	0% {
+		width: 0px;
+	}
+	100% {
+		width:88%;
+	}
+}
+.fill .number {
+	color:#146647;
+	font-weight:bold;
+	animation-name: fade-in;
+	animation-duration:3s;
+	animation-delay: 0s;
+	animation-iteration-count: initial;
+}
+@keyframes fade-in {
+	0% {opacity: 0;	}
+	40%{opacity:0;}
+	100% {opacity: 1;
+	}
+}
+/* end animation skills */

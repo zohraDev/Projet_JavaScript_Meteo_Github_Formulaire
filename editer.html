@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>edit cv</title>
+  <script src="https:use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+  <br>
+  <h1 style="text-align:center;">Editer mon CV</h1><br>
+  <div style="display:flex;justify-content:space-around;margin:0 140px;">
+      <div>
+          <h2>Editer section présentation</h2>
+          <form>
+            <p>Modifier le titre</p>
+            <input type="text" id="titrePresentation">
+            <p>Modifier le nom</p>
+            <textarea type="text" id="contenuPresentation"></textarea><br><br>
+            <button type="submit" id="btn">valider présentation</button> 
+            
+            <p id="msg1"></p>
+          </form>
+      </div>
+      <div>
+        <h2>Editer mes Formations</h2>
+        <form>
+          <p>modifier le titre</p>
+          <input type="text" id="titreFormation">
+          <p>Modifier la date 1</p>
+          <input type="text" id="dateFormation1">
+          <p>Modifier formation 1</p>
+          <input type="text" id="nomFormation1">
+
+          <p>Modifier la date 2</p>
+          <input type="text" id="dateFormation2">
+          <p>Modifier formation 2</p>
+          <input type="text" id="nomFormation2">
+
+          <p>Modifier la date 3</p>
+          <input type="text" id="dateFormation3">
+          <p>Modifier formation 3</p>
+          <input type="text" id="nomFormation3"><br><br>
+
+          <button type="submit" id="btn2">valider formations</button> 
+          <p id="msg2"></p>
+        </form>
+    </div>
+      <div>
+            <h2>Editer mes hobbies</h2>
+            <form>
+              <p>Modifier hobby 1</p>
+              <input type="text" id="hob1">
+              <p>Modifier hobby 2</p>
+              <input type="text" id="hob2">
+              <p>Modifier hobby 3</p>
+              <input type="text" id="hob3">
+              <p>Modifier hobby 4</p>
+              <input type="text" id="hob4">
+              <p>Modifier hobby 5</p>
+              <input type="text" id="hob5"><br><br>
+
+              <button type="submit" id="btn3">valider</button> 
+              <p id="msg3"></p>
+            </form>
+      </div>
+      <a href="index.html">retour</a>
+  </div>
+<br>
+<br>
+<script src="js/editer.js" type="text/javascript"></script>
+</body>
+</html>
